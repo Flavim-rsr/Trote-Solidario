@@ -37,7 +37,21 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 // Calculadora
 
 
+function calcular_pontos () {
+  let padrao = Number(document.getElementById("conjunto-padrao").value)
+  let kit = Number(document.getElementById("kit-alimentacao").value)
+  let latabaunilha = Number(document.getElementById("suplemento").value)
+  let pacotearroz5kg = Number(document.getElementById("arroz-5kg").value)
+  let pacotearroz1kg = Number(document.getElementById("arroz-1kg").value)
+  let pacotefeijao2kg = Number(document.getElementById("feijao-2kg").value)
+  let pacotefeijao1kg = Number(document.getElementById("feijao-1kg").value)
+  let pacotemacarrao = Number(document.getElementById("macarrao").value)
+  let oleo = Number(document.getElementById("oleo").value)
+  let sangue = Number(document.getElementById("sangueinput").value)
 
+  let total = ((padrao * 50) + (kit * 25) + (latabaunilha * 10) + (pacotearroz5kg * 5) + (pacotearroz1kg * 1) + (pacotefeijao2kg * 2) + (pacotefeijao1kg) + (pacotemacarrao * 0.5) + (oleo) + (sangue * 15))
+  alert(total)
+}
 // Slider
 
 const containers = document.querySelectorAll('.slider-content');
