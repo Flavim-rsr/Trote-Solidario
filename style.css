@@ -186,6 +186,8 @@ body * {
 }
 #pause {
     float: right;
+    position: relative;
+    z-index: 2 !important;
     padding: 10px;
     margin-top: 10px;
     border: none;
