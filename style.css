@@ -30,7 +30,6 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
     background: var(--bg-url) no-repeat top center/cover;
     height: 100%;
 }
@@ -45,6 +44,7 @@ body * {
     justify-content: space-between;
     height: fit-content;
     align-items: center;
+    width: auto;
 
     background-color: var(--bg-header);
 
@@ -121,8 +121,8 @@ body * {
 
 
 #left-corner {
-    display: block;
-    border-left: 1px solid var(--color-header-footer);
+    border-left: 1px solid white;
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
 #menu a {
@@ -153,6 +153,8 @@ body * {
 .slider-content {
     width: 100%;
     height: 400px;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: -200%;
@@ -227,11 +229,8 @@ body * {
     margin: 4px;
 }
 
-#article-slider a {
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    right: 40%;
+#maisinfo {
+    position: flex;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -258,6 +257,7 @@ body * {
     justify-content: space-between;
     align-items: center;
 
+    height: fit-content;
 
     background-color: var(--bg-header);
     border-top: 1px solid var(--boder-color);
@@ -295,7 +295,6 @@ body * {
 #equipes {
     color: var(--article-color);
 }
-
 #equipes p {
     margin-left: 20px;
     font-size: larger;
@@ -384,10 +383,7 @@ body * {
 
 #regrasimg {  /* Essa imagem é temporária e eu espero que alguem tenha alguma imagem mais relacionada ao trote solidário para colocar aqui */
     float: right;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin: 30px 20px;
     width: 400px;
     height: 600px;
 }
@@ -558,11 +554,16 @@ body * {
 
     #menu li {
         border: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     #menu a {
-        border-bottom: 2px solid var(--color-header-footer);
-        border-radius: 0;
+        position: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     #btn-mobile {
@@ -616,8 +617,43 @@ body * {
     }
 
     #equipes table {
-        width: 100vw;
+        width: 100%;
+        font-size: 12px;
     }
+    #ytvid {
+        display: block;
+        width: auto;
+    }
+    .slider-content {
+        font-size: 20px !important;
+        padding: 20px;
+    }
+    #slider-content2 {
+        display: flex;
+        font-size: 14px !important;
+        width: 370px;
+        
+    }
+    #maisinfo {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        color: white;
+    }
+    #header {
+        width: 100%;
+    }
+    #footer {
+        width: 100%;
+    }
+    #expandbutton {
+        width: 100%;
+    }
+
 }
 
 @keyframes slide-in {
