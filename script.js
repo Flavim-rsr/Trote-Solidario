@@ -36,7 +36,6 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 // Calculadora
 
-
 function calcular_pontos () {
   let padrao = Number(document.getElementById("conjunto-padrao").value)
   let kit = Number(document.getElementById("kit-alimentacao").value)
@@ -48,9 +47,9 @@ function calcular_pontos () {
   let pacotemacarrao = Number(document.getElementById("macarrao").value)
   let oleo = Number(document.getElementById("oleo").value)
   let sangue = Number(document.getElementById("sangueinput").value)
-
   let total = ((padrao * 50) + (kit * 25) + (latabaunilha * 10) + (pacotearroz5kg * 5) + (pacotearroz1kg * 1) + (pacotefeijao2kg * 2) + (pacotefeijao1kg) + (pacotemacarrao * 0.5) + (oleo) + (sangue * 15))
-  alert(total)
+  document.getElementById("resposta").textContent = total;
+  document.getElementById("comentario").textContent = "A quantidade de pontos que você acumulou foi de:  "
 }
 // Slider
 
@@ -77,7 +76,7 @@ function startSlider() {
     showContainer(0); // definir o slide default
     intervalId = setInterval(nextContainer, 10000); // intervalo de 10 segundos
 }
-  
+   
 function pauseSlider() {
     if (!paused) {
       clearInterval(intervalId); // botão pausa slider

@@ -12,6 +12,7 @@
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
     --th-color: black;
+    --table-color: white;
 }
 
 html {
@@ -304,22 +305,38 @@ body * {
     width: max-content;
     margin: 0 auto 20px;
 
-    border-spacing: 0px;
     table-layout: fixed;
     text-align: center;
     background-color: var(--bg-url);
+    box-shadow: 0 0 20px solid black;
+    border-radius: 10px;
 }
 
 #equipes th {
     background-color: var(--article-color);
     border: 3px solid var(--boder-color);
     padding: 4px;
-    color: var(--th-color);
+    border-radius: 5px;
+    color: #808080;
 }
 
 #equipes td {
     border: 1px solid var(--boder-color);
-    padding: 5px;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+
+#equipes tr:nth-child(even) td {
+    background-color: #5f5f5f;
+}
+ 
+#equipes tr:nth-child(odd) td {
+    background-color: #464646;
+}
+
+#equipes tr:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 #alimentos {
@@ -371,6 +388,48 @@ body * {
 
 }
 
+#inputlist li {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#flexthis {
+    display: flex;
+    flex-direction: column;
+}
+
+#calcular-pontos {
+    margin-left: 46px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #464646;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 2px grey;
+    transition: all 0.3s ease-in-out;
+}
+
+#calcular-pontos:hover {
+    background: radial-gradient(circle at center, #747474 0%, #1d1d1d 120%);
+    background-color: #5e5e5e;
+}
+
+#comentario {
+    font-size: larger;
+    margin: 40px 0px 20px 50px;
+    width: 100%;
+}
+
+#resposta {
+    font-size: 8vh;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
 #saibamais {
     margin-top: 200px;
     padding: 20px;
@@ -383,13 +442,32 @@ body * {
 
 #regrasimg {  /* Essa imagem é temporária e eu espero que alguem tenha alguma imagem mais relacionada ao trote solidário para colocar aqui */
     float: right;
-    margin: 30px 20px;
+    margin: 40px 20px;
     width: 400px;
     height: 600px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+    border: 4px solid var(--boder-color);
+}
+
+.expandbutton {
+    width: 73%;
+}
+
+#alimentos {
+    margin:20px 25px;
 }
 
 #pontuacao {
     color: var(--article-color);
+    margin: 20px 25px;
+}
+
+#sangue {
+    margin: 20px 25px;
+}
+
+#calculadora {
+    margin: 20px 25px;
 }
 
 #pontuacao #header2 {
@@ -484,7 +562,7 @@ body * {
     border: none;
     color: white;
     padding: 10px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -513,8 +591,20 @@ body * {
     font-size: 20px;
     padding-bottom: 8px;
 }
-#sobrenos a{
+#sobrenos a {
     color: var(--article-color);
+}
+
+#sobrenos div {
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#projetogithub {
+    font-size: 60px;
+    margin-left: 20px;
 }
 
 @media(max-width: 600px) {
@@ -648,9 +738,6 @@ body * {
         width: 100%;
     }
     #footer {
-        width: 100%;
-    }
-    #expandbutton {
         width: 100%;
     }
 
