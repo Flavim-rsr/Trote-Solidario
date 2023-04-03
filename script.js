@@ -1,3 +1,4 @@
+// Mudança do site de escuro para claro
 function toggleMode() {
     const html = document.documentElement
     html.classList.toggle('light')
@@ -13,6 +14,7 @@ function toggleMode() {
     }
 }
 
+// Código para o botão menu mobile 
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -31,3 +33,109 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+// Calculadora
+
+function calcular_pontos () {
+  let padrao = Number(document.getElementById("conjunto-padrao").value)
+  let kit = Number(document.getElementById("kit-alimentacao").value)
+  let latabaunilha = Number(document.getElementById("suplemento").value)
+  let pacotearroz5kg = Number(document.getElementById("arroz-5kg").value)
+  let pacotearroz1kg = Number(document.getElementById("arroz-1kg").value)
+  let pacotefeijao2kg = Number(document.getElementById("feijao-2kg").value)
+  let pacotefeijao1kg = Number(document.getElementById("feijao-1kg").value)
+  let pacotemacarrao = Number(document.getElementById("macarrao").value)
+  let oleo = Number(document.getElementById("oleo").value)
+  let sangue = Number(document.getElementById("sangueinput").value)
+  let total = ((padrao * 50) + (kit * 25) + (latabaunilha * 10) + (pacotearroz5kg * 5) + (pacotearroz1kg * 1) + (pacotefeijao2kg * 2) + (pacotefeijao1kg) + (pacotemacarrao * 0.5) + (oleo) + (sangue * 15))
+  document.getElementById("resposta").textContent = total;
+  document.getElementById("comentario").textContent = "A quantidade de pontos que você acumulou foi de:  "
+}
+// Slider
+
+const containers = document.querySelectorAll('.slider-content');
+let currentContainer = 0;
+let intervalId;
+let paused = false;
+
+function showContainer(n) { 
+  containers[currentContainer].classList.remove('active'); // remove a classe "active"
+  containers[n].classList.add('active'); // adiciona a classe "active" para o próximo container
+  currentContainer = n; // identifica o atual container
+}
+
+function nextContainer() {
+  let nextContainer = currentContainer + 1; // identifica qual é o próximo container
+  if (nextContainer >= containers.length) { // se o próximo container é maior que a quantidade
+    nextContainer = 0;                      // de containers ele volta para o primeiro
+  }
+  showContainer(nextContainer); // ativa a function "showContainer" para mostrar o próximo container
+}
+
+function startSlider() {
+    showContainer(0); // definir o slide default
+    intervalId = setInterval(nextContainer, 10000); // intervalo de 10 segundos
+}
+   
+function pauseSlider() {
+    if (!paused) {
+      clearInterval(intervalId); // botão pausa slider
+      paused = true;
+      pauseButton.textContent = "Resume"; // botão muda para "Resume"
+    } else {
+      startSlider(); // botão para continuar o slider
+      paused = false;
+      pauseButton.textContent = "Pause"; // botão muda para "Pause"
+    }
+  }
+  
+startSlider();
+  
+const pauseButton = document.getElementById("pause"); 
+pauseButton.addEventListener("click", pauseSlider); // botão ativa a function "PauseSlider" quando pressionado
+  
+// Expand
+
+// eu tentei colocar o script expand aqui mas ele parou de funcionar e eu não sei porque
+// calculadora 
+
+function calcular() {
+  let = conjunto = (document.getElementById("kits").value)
+  let pontos
+  if (conjunto >= 80) {
+      pontos = 5000
+  }
+  else if ((conjunto >= 64) && (conjunto < 80)) {
+      pontos = 4000
+      if (conjunto != 64 || conjunto != 80) {
+          padrao = conjunto - 64
+      }
+  }
+  else if ((
+      conjunto >= 40) && (conjunto < 64)) {
+      pontos = 2500
+      if (conjunto != 40 || conjunto != 64){
+          padrao = conjunto - 40
+      }
+  }
+  else if ((conjunto >= 16) && (conjunto < 40)) {
+      pontos = 1000
+      if (conjunto != 16 || conjunto != 40){
+          padrao = conjunto - 16
+      }
+  }
+  else if ((kits >= 0) && (kits < 16)) {
+      pontos = 0
+  }
+  let = kit = (document.getElementById("kit").value)
+  let = lata = (document.getElementById("lata").value)
+  let = arroz5 = (document.getElementById("arroz5").value)
+  let = arroz1 = (document.getElementById("arroz1").value)
+  let = feijao2 = (document.getElementById("feijao2").value)
+  let = feijao1 = (document.getElementById("feijao1").value)
+  let = macarrao = (document.getElementById("macarrao").value)
+  let = oleo = (document.getElementById("oleo").value)
+  let = sangue = (document.getElementById("sangue").value)
+  let = pontos + (padrao * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
+}
+

@@ -21,6 +21,7 @@
         <a href="./index.html"><img src="./assets/trote-fundo-branco.png"
                 alt="Logo do Trote Solidário 2023 com escritas em branco"></a>
         <nav id="nav">
+            <!-- Botão menu mobile -->
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="">Menu
                 <span id="hamburguer"></span>
@@ -29,7 +30,7 @@
                 <li id="left-corner">
                     <a href="./index.html">Home</a>
                 </li>
-                
+
                 <li>
                     <a href="./equipes.html">Equipes</a>
                 </li>
@@ -39,22 +40,24 @@
                 </li>
 
                 <li>
-                    <a href="#">Gincana</a>
+                    <a href="./eventos.html">Eventos</a>
                 </li>
 
                 <li>
-                    <a href="#">Integração</a>
+                    <a href="./sobre.html">Sobre Nós</a>
                 </li>
             </ul>
         </nav>
+        <!-- Botão de trocar entre claro e escuro -->
         <div id="switch" onclick="toggleMode()">
             <button></button>
             <span></span>
         </div>
     </header>
-
+    <!-- Informações do site -->
     <article id="equipes">
         <p>As equipes ficaram divididas em 5 cores sendo elas as respectivas:</p>
+        <!-- Tabela -->
         <table>
             <tr>
                 <th>Equipe</th>
@@ -117,7 +120,7 @@
             </tr>
         </table>
     </article>
-
+    <!-- Rodapé -->
     <footer id="footer">
         <strong> Feito pelos alunos de Ciência da Computação e Sistemas da Informação - 2023</strong>
         <aside id="social-links">
@@ -134,6 +137,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Conexão entre a programação JS e HTML -->
     <script src="./script.js"></script>
 </body>
 

@@ -29,7 +29,7 @@
                 <li id="left-corner">
                     <a href="./index.html">Home</a>
                 </li>
-                
+
                 <li>
                     <a href="./equipes.html">Equipes</a>
                 </li>
@@ -39,12 +39,13 @@
                 </li>
 
                 <li>
-                    <a href="#">Gincana</a>
+                    <a href="./eventos.html">Eventos</a>
                 </li>
 
                 <li>
-                    <a href="#">Integração</a>
+                    <a href="./sobre.html">Sobre Nós</a>
                 </li>
+            </ul>
             </ul>
         </nav>
         <div id="switch" onclick="toggleMode()">
@@ -53,37 +54,165 @@
         </div>
     </header>
 
-    <article id="regras">
-        <h1 id="header" style="font-size: 2em; font-weight: bold;">Alimentos e Suplementos</h1>
-        <p style="font-size: 1em;">Esta etapa consiste na arrecadação/doação, pelos calouros, de itens alimentícios que
-            serão posteriormente entregues a entidades e instituições francanas de assistência social e suplementos
-            alimentares destinados às atividades dos Voluntários da Saúde, que atuam no Hospital de Câncer de Franca.
-        </p>
-        <p id="desc1">Os estudantes deverão arrecadar um conjunto a seguir descrito:</p>
-        <p style="font-weight: bold; display: inline;">Suplementos Alimentares</p>
-        <p style="display: inline;">, conforme especificação:</p>
-        <p><span class="dot"></span>Lata de 400 gramas, adulto, sabor baunilha, das marcas:</p>
-        <ul class="marcas">
-            <li>-Ensure</li>
-            <li>-Nutren 1.0</li>
-        </ul>
-        <p style="font-weight: bold; display: inline;">Kits Alimentação</p>
-        <p style="display: inline;"> contendo </p>
-        <p style="display: inline; font-weight: bolder;">NECESSARIAMENTE</p>
-        <p style="display: inline"> os seguintes items e as respectivas quantidades abaixo relacionadas:</p>
-        <ul class="kit alimentacao">
-            <li>-2 pacotes de 5kg de arroz - tipo 1;</li>
-            <li>-2 pacotes de 2kg (ou 4 pacotes de 1kg) de feijão - tipo carioca;</li>
-            <li>-3 unidades óleo de soja (1 litro ou 900ml cada);</li>
-            <li>-6 pacotes de macarrão de ½ kg (ou 3 pacotes de 1kg)</li>
-        </ul>
-        <p style="font-weight: bold">Meta: 80 conjuntos com 1 kit alimentação e 1 lata de suplemento por equipe.</p>
-        <p id="saibamais"><a
-                href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDA%CC%81RIO-2023-REGULAMENTO-v2-2.pdf">Clique
-                aqui para saber mais</a></p>
+    <article id="alimentos">
+        <header id="rootdontusethisheader">
+            <img id="regrasimg" src="./assets/stocktemp.jpeg" alt="temporary image">
+            <button class="expandbutton" id="alimentos-btn" aria-expanded="false" aria-controls="content1">
+                <h1 id="headeralimentos" style="font-size: 2em; font-weight: bold;">Alimentos e Suplementos</h1>
+        </header>
+        <div id="content1" hidden>
+            <p style="font-size: 1em;">Esta etapa consiste na arrecadação/doação, pelos calouros, de itens alimentícios
+                que
+                serão posteriormente entregues a entidades e instituições francanas de assistência social e suplementos
+                alimentares destinados às atividades dos Voluntários da Saúde, que atuam no Hospital de Câncer de
+                Franca.
+            </p>
+            <p id="desc1">Os estudantes deverão arrecadar um conjunto a seguir descrito:</p>
+            <p style="font-weight: bold; display: inline;">Suplementos Alimentares</p>
+            <p style="display: inline;">, conforme especificação:</p>
+            <p><span class="dot"></span>Lata de 400 gramas, adulto, sabor baunilha, das marcas:</p>
+            <ul class="marcas">
+                <li>-Ensure</li>
+                <li>-Nutren 1.0</li>
+            </ul>
+            <p style="font-weight: bold; display: inline;">Kits Alimentação</p>
+            <p style="display: inline;"> contendo </p>
+            <p style="display: inline; font-weight: bolder;">NECESSARIAMENTE</p>
+            <p style="display: inline"> os seguintes items e as respectivas quantidades abaixo relacionadas:</p>
+            <ul class="kit alimentacao">
+                <li>-2 pacotes de 5kg de arroz - tipo 1;</li>
+                <li>-2 pacotes de 2kg (ou 4 pacotes de 1kg) de feijão - tipo carioca;</li>
+                <li>-3 unidades óleo de soja (1 litro ou 900ml cada);</li>
+                <li>-6 pacotes de macarrão de ½ kg (ou 3 pacotes de 1kg)</li>
+            </ul>
+            <p style="font-weight: bold">Meta: 80 conjuntos com 1 kit alimentação e 1 lata de suplemento por equipe.</p>
         </div>
     </article>
-
+    <article id="pontuacao">
+        <header>
+            <button id="pontuacao-btn" class="expandbutton" aria-expanded="false" aria-controls="content2">
+                <h1 id="header2" style="font-size: 2em; font-weight: bold;">Pontuação</h1>
+        </header>
+        <div id="content2" hidden>
+            <p style="font-size: 1em;">
+                A pontuação poderá, ainda, ser fragmentada em caso de não cumprimento da
+                meta total, com escalas em 80%, 50% e 20% da quantidade inicialmente estabelecida.
+            </p>
+            <p style="font-weight: bold; display: inline;">ESCALA DE PONTUAÇÕES – CONJUNTOS</p>
+            <ul class="pontconjuntos">
+                <li>TAREFA CUMPRIDA COM O TOTAL DA META (80) = 5.000 PONTOS</li>
+                <li>Entrega de, no mínimo, 80% dos itens (64) = 4.000 pontos</li>
+                <li>Entrega de, no mínimo, 50% dos itens (40) = 2.500 pontos</li>
+                <li> Entrega de, no mínimo, 20% dos itens (16) = 1.000 pontos</li>
+                <li>Abaixo de 20%, turma não pontua.</li>
+            </ul>
+            <div>Cada estudante que cumprir sua participação na prova de arrecadação com a
+                entrega de 01 (um) Suplemento e 01 (um) Kit Alimentação terá direito a um certificado
+                com 30 horas-atividade. Na incidência de o estudante dobrar sua doação, a quantidade
+                de horas-atividade também será dobrada até um limite de 60 horas.</div>
+            <div>Os alunos serão responsáveis pela arrecadação, controle, armazenamento prévio e
+                entrega dos itens arrecadados. O representante da turma realizará a entrega dos itens
+                correspondentes ao seu curso no dia 29/03/2023, das 08h00 às 10h00, na Unidade I
+                (av. Major Nicácio, 2433), em salas definidas por sorteio. Também, deverá ser
+                entregue uma lista dos alunos doadores para fins de controle dos certificados das
+                horas-atividade.
+            </div>
+            <div>
+                <p>As doações que excederem a meta serão pontuadas da seguinte forma:</p>
+                <ul class="excedeumeta1">
+                    <li>Conjunto Padrão = 50 pontos</li>
+                    <li>(Kit Alimentação + Lata de Suplemento)</li>
+                </ul>
+                <p>Avulsos:</p>
+                <ul class="excedeumeta2">
+                    <li>Kit Alimentação = 25 pontos</li>
+                    <li>Lata de suplemento baunilha 400 gramas (Ensure) = 10 pontos</li>
+                    <li>Pacote de Arroz 05 Kg = 5 pontos</li>
+                    <li>Pacote de Arroz 01 Kg = 1 ponto</li>
+                    <li>Pacote de Feijão 02 Kg = 2 pontos</li>
+                    <li>Pacote de Feijão 01 Kg = 1 ponto</li>
+                    <li>Pacote de Macarrão de 500 gramas = ½ ponto</li>
+                    <li>Óleo 900 ml = 1 ponto</li>
+                </ul>
+                <p>Doação de sangue:</p>
+                <p>• A doação de sangue será considerada facultativa, ou seja, não incidirá pontos por meta comprida,
+                    entretanto, valerá 15 pontos para cada doação efetuada.
+                </p>
+                <p>Também será estendida aos veteranos a emissão de certificado por doação.
+                    Para tanto cada um deverá efetuar a doação de um conjunto completo (lata de
+                    suplemento + kit alimentação), sendo: 30 horas-atividade para doação de 01 conjunto
+                    padrão, e 60 horas para dois ou mais conjuntos padrão. A listagem de controle das
+                    doações dos veteranos será disponibilizada pelo chefe do departamento (padrinho da
+                    equipe) à comissão.
+                    A doação por alunos veteranos valerá em 50 pontos extras por conjunto (kit
+                    Alimentação e Suplemento), para a equipe.</p>
+                <p>O resultado final da arrecadação será divulgado na noite de encerramento do
+                    Trote Solidário Uni-FACEF 2023, que ocorrerá em 31 de março, a partir das 19h15 no
+                    Hall Central da a Unidade II.</p>
+                <p style="font-weight: bolder;">IMPORTANTE:</p>
+                <p style="font-weight: bold;">
+                    ✓ Doações sem a composição do conjunto padrão podem ser
+                    pontuadas para a turma, conforme critério de itens avulsos, mas não
+                    fazem jus ao certificado de horas atividade.
+                </p>
+                <p style="font-weight: bold;">✓ Outros alimentos que não fazem parte do Kit Alimentação, como por
+                    exemplo: enlatados, produtos de higiene e limpeza, entre outros,
+                    serão encaminhados à doação, porém não pontuarão.</p>
+            </div>
+        </div>
+    </article>
+    <article id="sangue">
+        <header>
+            <button id="sangue-btn" class="expandbutton" aria-expanded="false" aria-controls="content3">
+                <h1 id="header3" style="font-size: 2em; font-weight: bold;">Doação de Sangue</h1>
+        </header>
+        <div id="content3" hidden>
+            <p>A doação de sangue no Trote Solidário 2023 será considerada facultativa, ou seja,
+                não incidirá pontos por meta cumprida, entretanto, valerá pontos para cada doação
+                efetuada. </p>
+            <ul>
+                <li>Cada doação equivalerá a 15 pontos</li>
+                <li>Para comprovar a doação o doador deverá solicitar um cartão do
+                    Hemocentro com carimbo do Trote Solidário e assinatura.</li>
+                <li>Os comprovantes deverão ser entregues no momento da entrega dos
+                    demais itens no dia 29/03/2023, das 08h00 às 10h00 na Unidade I
+                    do Uni-FACEF.</li>
+            </ul>
+            <p>O resultado final da arrecadação será divulgado na noite de encerramento do
+                Trote Solidário Uni-FACEF 2023, que ocorrerá em 31 de março, a partir das 19h15 no
+                Hall Central da a Unidade II.</p>
+        </div>
+    </article>
+    <article id="calculadora">
+        <header>
+            <button id="calculadora-btn" class="expandbutton" aria-expanded="false" aria-controls="content4">
+                <h1 id="header4" style="font-size: 2em; font-weight: bold;">Calculadora</h1>
+        </header>
+        <div id="content4" hidden>
+                <!--Calculadora e link com o script dela fica aqui-->
+                <ul id="inputlist">
+                    <li>Conjunto padrão (Kit alimentação + Lata de Suplementos): <input type="number" id="conjunto-padrao"></li>
+                    <li>Kit Alimentação: <input type="number" id="kit-alimentacao"></li>
+                    <li>Lata de suplemento baunilha 400 gramas (Ensure): <input type="number" id="suplemento"></li>
+                    <li>Pacote de Arroz 05 Kg: <input type="number" id="arroz-5kg"></li>
+                    <li>Pacote de Arroz 01 Kg: <input type="number" id="arroz-1kg"></li>
+                    <li>Pacote de Feijão 02 Kg: <input type="number" id="feijao-2kg"></li>
+                    <li>Pacote de Macarrão de 500 gramas: <input type="number" id="macarrao"></li>
+                    <li>Pacote de Feijão 01 Kg: <input type="number" id="feijao-1kg"></li>
+                    <li>Óleo 900 ml: <input type="number" id="oleo"></li>
+                    <li>Doação de Sangue: <input type="number" id="sangueinput"></li>
+                </ul>
+                <button onclick="calcular_pontos()" id="calcular-pontos">Calcular</button>
+                <div id="flexthis">
+                    <div id="comentario"></div>
+                    <div id="resposta"></div>
+                </div>
+        </div>
+    </article>
+    <p id="saibamais"><a
+            href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDA%CC%81RIO-2023-REGULAMENTO-v2-2.pdf">Clique
+            aqui para saber mais</a></p>
+    <script src="./expand.js"></script>
     <footer id="footer">
         <strong> Feito pelos alunos de Ciência da Computação e Sistemas da Informação - 2023</strong>
         <aside id="social-links">
@@ -101,6 +230,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
+    <script src="script.js" ></script>
 </body>
 
 </html>
