@@ -189,25 +189,24 @@
                 <h1 id="header4" style="font-size: 2em; font-weight: bold;">Calculadora</h1>
         </header>
         <div id="content4" hidden>
-            <!--Calculadora e link com o script dela fica aqui-->
-            <p>Avulso</p>
-            <ul>
-                <li>Conjunto padrão (Kit alimentação + Lata de Suplementos): <input type="number" id="conjunto-padrao">
-                </li>
-                <li>Kit Alimentação: <input type="number" id="kit-alimentacao"></li>
-                <li>Lata de suplemento baunilha 400 gramas (Ensure): <input type="number" id="suplemento"></li>
-                <li>Pacote de Arroz 05 Kg: <input type="number" id="arroz-5kg"></li>
-                <li>Pacote de Arroz 01 Kg: <input type="number" id="arroz-1kg"></li>
-                <li>Pacote de Feijão 02 Kg: <input type="number" id="feijao-2kg"></li>
-                <li>Pacote de Macarrão de 500 gramas: <input type="number" id="macarrao"></li>
-                <li>Pacote de Feijão 01 Kg: <input type="number" id="feijao-1kg"></li>
-                <li>Óleo 900 ml: <input type="number" id="oleo"></li>
-            </ul>
-            <p>Doação de Sangue</p>
-            <ul>
-                <li>Doação de Sangue: <input type="number" id="sangueinput"></li>
-            </ul>
-            <button onclick="calcular_pontos()" id="calcular-pontos">Calcular</button>
+                <!--Calculadora e link com o script dela fica aqui-->
+                <ul id="inputlist">
+                    <li>Conjunto padrão (Kit alimentação + Lata de Suplementos): <input type="number" id="conjunto-padrao"></li>
+                    <li>Kit Alimentação: <input type="number" id="kit-alimentacao"></li>
+                    <li>Lata de suplemento baunilha 400 gramas (Ensure): <input type="number" id="suplemento"></li>
+                    <li>Pacote de Arroz 05 Kg: <input type="number" id="arroz-5kg"></li>
+                    <li>Pacote de Arroz 01 Kg: <input type="number" id="arroz-1kg"></li>
+                    <li>Pacote de Feijão 02 Kg: <input type="number" id="feijao-2kg"></li>
+                    <li>Pacote de Macarrão de 500 gramas: <input type="number" id="macarrao"></li>
+                    <li>Pacote de Feijão 01 Kg: <input type="number" id="feijao-1kg"></li>
+                    <li>Óleo 900 ml: <input type="number" id="oleo"></li>
+                    <li>Doação de Sangue: <input type="number" id="sangueinput"></li>
+                </ul>
+                <button onclick="calcular_pontos()" id="calcular-pontos">Calcular</button>
+                <div id="flexthis">
+                    <div id="comentario"></div>
+                    <div id="resposta"></div>
+                </div>
         </div>
     </article>
     <p id="saibamais"><a
