@@ -48,6 +48,7 @@ body * {
     width: auto;
 
     background-color: var(--bg-header);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
 
     font-size: 30px;
 }
@@ -440,34 +441,34 @@ body * {
     color: var(--article-color);
 }
 
-#regrasimg {  /* Essa imagem é temporária e eu espero que alguem tenha alguma imagem mais relacionada ao trote solidário para colocar aqui */
+#regrasimg {
     float: right;
     margin: 40px 20px;
-    width: 400px;
+    width: 40%;
     height: 600px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
     border: 4px solid var(--boder-color);
 }
 
 .expandbutton {
-    width: 73%;
+    width: 50%;
 }
 
 #alimentos {
-    margin:20px 25px;
+    margin:20px 60px;
 }
 
 #pontuacao {
     color: var(--article-color);
-    margin: 20px 25px;
+    margin: 20px 60px;
 }
 
 #sangue {
-    margin: 20px 25px;
+    margin: 20px 60px;
 }
 
 #calculadora {
-    margin: 20px 25px;
+    margin: 20px 60px;
 }
 
 #pontuacao #header2 {
