@@ -36,20 +36,20 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 // Calculadora
 function calcular_pontos() {
-  let = conjunto = (document.getElementById("conjunto-padrao").value)
+  let conjunto = Number(document.getElementById("conjunto-padrao").value)
   let total
-  let = kit = (document.getElementById("kit-alimentacao").value)
-  let = lata = (document.getElementById("suplemento").value)
-  let = arroz5 = (document.getElementById("arroz-5kg").value)
-  let = arroz1 = (document.getElementById("arroz-1kg").value)
-  let = feijao2 = (document.getElementById("feijao-2kg").value)
-  let = feijao1 = (document.getElementById("feijao-1kg").value)
-  let = macarrao = (document.getElementById("macarrao").value)
-  let = oleo = (document.getElementById("oleo").value)
-  let = sangue = (document.getElementById("sangueinput").value)
-  let = total = (conjunto * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
+  let kit = Number(document.getElementById("kit-alimentacao").value)
+  let lata = Number(document.getElementById("suplemento").value)
+  let arroz5 = Number(document.getElementById("arroz-5kg").value)
+  let arroz1 = Number(document.getElementById("arroz-1kg").value)
+  let feijao2 = Number(document.getElementById("feijao-2kg").value)
+  let feijao1 = Number(document.getElementById("feijao-1kg").value)
+  let macarrao = Number(document.getElementById("macarrao").value)
+  let oleo = Number(document.getElementById("oleo").value)
+  let sangue = Number(document.getElementById("sangueinput").value)
   if (conjunto >= 80) {
       total = 5000
+        padrao = conjunto - 80
   }
   else if ((conjunto >= 64) && (conjunto < 80)) {
       total = 4000
@@ -72,6 +72,10 @@ function calcular_pontos() {
   }
   else if ((conjunto >= 0) && (conjunto < 16)) {
       total = 0
+      padrao = conjunto
+  }
+  let totalp = total + (padrao * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
+  document.getElementById("resposta").textContent = totalp;
   }
   
   document.getElementById("resposta").textContent = total;
@@ -119,7 +123,6 @@ startSlider();
   
 const pauseButton = document.getElementById("pause"); 
 pauseButton.addEventListener("click", pauseSlider); // botão ativa a function "PauseSlider" quando pressionado
-  
 // Expand
 
 // eu tentei colocar o script expand aqui mas ele parou de funcionar e eu não sei porque
