@@ -57,8 +57,7 @@ function calcular_pontos() {
           padrao = conjunto - 64
       }
   }
-  else if ((
-      conjunto >= 40) && (conjunto < 64)) {
+  else if ((conjunto >= 40) && (conjunto < 64)) {
       total = 2500
       if (conjunto != 40 || conjunto != 64){
           padrao = conjunto - 40
@@ -75,8 +74,8 @@ function calcular_pontos() {
       padrao = conjunto
   }
   let totalp = total + (padrao * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
-  document.getElementById("resposta").textContent = totalp;
   document.getElementById("comentario").textContent = "A quantidade de pontos que você acumulou foi de:  "
+  document.getElementById("resposta").textContent = totalp;
 }
 // Slider
 
