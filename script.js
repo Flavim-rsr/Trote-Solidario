@@ -76,6 +76,9 @@ function calcular_pontos() {
   }
   let totalp = total + (padrao * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
   document.getElementById("resposta").textContent = totalp;
+  }
+  
+  document.getElementById("resposta").textContent = total;
   document.getElementById("comentario").textContent = "A quantidade de pontos que você acumulou foi de:  "
 }
 // Slider
@@ -120,7 +123,6 @@ startSlider();
   
 const pauseButton = document.getElementById("pause"); 
 pauseButton.addEventListener("click", pauseSlider); // botão ativa a function "PauseSlider" quando pressionado
-
 // Expand
 
 // eu tentei colocar o script expand aqui mas ele parou de funcionar e eu não sei porque
