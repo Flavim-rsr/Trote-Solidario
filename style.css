@@ -435,6 +435,7 @@ body * {
 }
 
 #regrasimg {
+    background-image: url(./assets/stocktemp3.jpg);
     float: right;
     margin: 40px 20px;
     width: 40%;
@@ -713,6 +714,11 @@ body * {
         display: block;
         width: auto;
     }
+
+    #regrasimg {
+        height: 100%;
+        width: 100%;
+    }   
     .slider-content {
         font-size: 20px !important;
         padding: 20px;
