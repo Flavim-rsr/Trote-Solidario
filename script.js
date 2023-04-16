@@ -49,7 +49,7 @@ function calcular_pontos() {
   let sangue = Number(document.getElementById("sangueinput").value)
   if (conjunto >= 80) {
       total = 5000
-        padrao = conjunto - 80
+      padrao = conjunto - 80
   }
   else if ((conjunto >= 64) && (conjunto < 80)) {
       total = 4000
@@ -76,9 +76,6 @@ function calcular_pontos() {
   }
   let totalp = total + (padrao * 50) + (kit * 25) + (lata * 10) + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (sangue * 15)
   document.getElementById("resposta").textContent = totalp;
-  }
-  
-  document.getElementById("resposta").textContent = total;
   document.getElementById("comentario").textContent = "A quantidade de pontos que você acumulou foi de:  "
 }
 // Slider
