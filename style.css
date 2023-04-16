@@ -231,15 +231,6 @@ body * {
     margin: 4px;
 }
 
-#maisinfo {
-    position: flex;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    color: white;
-}
-
 #ytvid {
     display: flex;
     width: 1040px;
@@ -577,6 +568,11 @@ body * {
     background-color: #30363d;
 }
 
+#eventoscontainer {
+    color: var(--article-color);
+    margin: 50px;
+}
+
 #sobrenos {
     padding: 0 16px 0 8px;
     text-align: justify;
@@ -725,16 +721,7 @@ body * {
         width: 370px;
         
     }
-    #maisinfo {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px;
-        color: white;
-    }
+
     #header {
         width: 100%;
     }
